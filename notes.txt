@@ -1,0 +1,100 @@
+why ds ? 
+
+
+algo ?
+
+
+algo !!! 
+
+
+complexity : 
+
+1) time complexity : time 
+2) space complexity : memory 
+
+
+1 to 1cr => sum 
+16GB i7 
+
+
+1 to 1cr => sum 
+4GB i3
+
+
+Data : algo 
+
+
+primitive                               non primitive
+                        linear ds                               non linear  
+                        array                                   tree 
+                        stack                                   graph 
+                        queue 
+                        linked list 
+
+
+
+Army -> 
+    training => 
+            Ak47 
+            Sniper
+            Rifel 
+            shotGun 
+            stick 
+            bazooka 
+            pistol     
+
+
+----------------------------------------------------------------------------------------------
+
+int a,b,c; 
+a = 10 
+
+
+a = 20 
+
+
+
+
+array :- 
+        linear data structure 
+        collection of elements / items / data 
+        same type of data type 
+        consecutive memory locations under one variable name
+
+        int a[5]; //array 
+     
+    a = 10 
+    a = 20 
+
+        access ? 
+                    index 
+                        starts : 0 
+                        ends   : size - 1 
+                        
+
+Storage class :{4} 
+
+auto : local : G.V 
+extern : global , file  : 0
+XXXXX : 
+XXXXX : 
+
+----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
