@@ -82,7 +82,36 @@ XXXXX :
 ----------------------------------------------------
 
 
+												
+												
+												
+		0	1	2	3	4						
+	arr	400	600	200	300	0			int arr[SIZE]			gv? 
+				i								
+												
+												
+												
+												
+												
+						location	data	index				
+			insertData(1,100)			1	100	0				
+			insertData(2,200)			2	200	1				
+			insertData(3,300)			3	300	2				
+												
+			insertData(1,400)			1	400	0				
+												
+			insertData(3,600)			3	600	2				
+												
+			display( )			400  100 600 200 300						
+												
+			removeData(2)			2		1				
 
+---------------------------------------------------------------
+
+
+searching : 
+    linear search 
+    
 
 
 
