@@ -138,12 +138,33 @@ for(i=0;i<SIZE;i++){
 
 
 
+---------------------------------------------------------------
+
+
+Stack :- LiFo 
+         Last In First Out 
+
+
+    undo feature 
+    bowl of popcorn - plates - chair  -   
+    browser history 
+    call history 
+    whats app chat -> chat -> inbox 
+    gmail -> email -> inbox 
+    photo gallery -> 
+    recursion ->  
+    arithmetic expression -> a + b * c  
+    parenthesis validation ->  [( (  ) )] ,   ( ( (()))
+
+add -> insert       -> PUSH
+delete -> remove    -> POP 
+display ->          -> display 
+
+
+*PEEP 
+*PEEK 
 
 
 
 
-
-
-
-
-
+---------------------------------------------------------------
