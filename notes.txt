@@ -162,8 +162,20 @@ display ->          -> display
 
 
 *PEEP 
-*PEEK 
+*PEAK -> top of the stack 
 
+
+
+String reverse using stack:- 
+char stack-> 
+
+enter the string 
+    royal 
+    layor 
+
+enter the string 
+    jack
+    kcaj
 
 
 
