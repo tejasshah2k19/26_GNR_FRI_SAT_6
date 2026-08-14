@@ -178,5 +178,52 @@ enter the string
     kcaj
 
 
+LIFO 
+
+
+
+
+
+5*(10+20)
+
+
+((((((((((((((((()))))))))))))))))
+
+[{}[]{{{()(())}}}]
+
+( { { } ) }
+
+para validator -> valid inValid 
+( ) : valid 
+( [ ] ) : valid 
+
+( { [  } ] ) : invalid 
+
+
+enter para? 
+( )
+valid 
+( (  ) ){ 
+invalid 
+
+STACK 
 
 ---------------------------------------------------------------
+Queue -> 
+
+ -> FIFO  : First In First Out 
+    FCFS  :
+
+    10 20 30 40 50 
+    printer -> print 
+
+    Call center 
+
+    cpu scheduling 
+ 
+    ATM queue
+    Courier pickup requests
+    Online Game Match making Queue
+    Car wash queue    
+
+
