@@ -9,24 +9,53 @@ int front = -1;
 
 void enQueue(int data)
 {
-    rear++;
-    queue[rear] = data;
-    if (front == -1)
+
+    if (rear == SIZE - 1)
     {
-        front = 0;
+        printf("\nQueue is Full : no enQueue allowed");
+    }
+    else
+    {
+        rear++;
+        queue[rear] = data;
+        if (front == -1)
+        {
+            front = 0;
+        }
     }
 }
 
 void deQueue()
 {
-    printf("\n%d removed ...... ",queue[front]);
-    front++; 
+    if (front == -1)
+    {
+        printf("\nQueue is empty : no deQueue allowed ");
+    }
+    else if (front == rear)
+    {
+        printf("\n%d removed ...... ", queue[front]);
+        front = -1;
+        rear = -1;
+    }
+    else
+    {
+        printf("\n%d removed ...... ", queue[front]);
+        front++;
+    }
 }
 
 void display()
 {
-    for(int i=front;i<=rear;i++){
-        printf(" %d",queue[i]);
+    if (front == -1)
+    {
+        printf("\nQueue is empty : display is not allowed ");
+    }
+    else
+    {
+        for (int i = front; i <= rear; i++)
+        {
+            printf(" %d", queue[i]);
+        }
     }
 }
 
