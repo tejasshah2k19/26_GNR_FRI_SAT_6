@@ -227,3 +227,5 @@ Queue ->
     Car wash queue    
 
 
+1) simple queue 
+2) circular queue
