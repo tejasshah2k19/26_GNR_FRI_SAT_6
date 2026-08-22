@@ -39,6 +39,30 @@ void enQueue(int data)
 
 void deQueue()
 {
+    // empty
+    if (front == -1)
+    {
+        printf("\nQueue is empty : ");
+    }
+    else if (front == rear)
+    {
+        // last element - remove
+        printf("\n%d removed ", cQueue[front]);
+        front = -1;
+        rear = -1;
+    }
+    else if (front == SIZE - 1)
+    {
+        //last index - cycle 
+        printf("\n%d removed ", cQueue[front]);
+        front = 0;
+    }
+    else
+    {
+        //simple 
+        printf("\n%d removed ", cQueue[front]);
+        front++;
+    }
 }
 
 void display()
