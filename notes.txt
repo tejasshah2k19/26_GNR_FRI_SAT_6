@@ -229,3 +229,123 @@ Queue ->
 
 1) simple queue 
 2) circular queue
+3) double ended queue
+
+
+
+insert -> 
+    10  20  30  40  
+
+DQ
+IRD -> input restricted deQueue  {insertion at end , delete can be both the side }
+ORD -> Output restricted deQueue {insertion can be both side, delete at front }
+
+
+-----------------------------------------------------------------------------------------
+
+function
+pointer 
+structure 
+DMA : dynamic memory allocation 
+
+
+pointer variable  : store the address of another variable
+
+* => pointer 
+
+
+int a; //4 byte 
+a = 10; 
+int *p;
+p = &a; // address of a  
+
+
+float x; 
+x = 12.20;
+float *q; 
+q = &X;
+
+
+
+printf(" %d ",a); //10 
+printf(" %d ", *p); //10  -> value at 
+printf(" %f ", *q); //12.20  -> value at 
+
+
+int **t; 
+
+t = &p; 
+
+printf => p 
+
+
+
+1) perform addition of two numbers a and b , but you can not use a and b in scanf or printf and with + operator. 
+
+int a,b; 
+int *p,*q; 
+int ans;
+
+p = &a ; 
+q = &b ;
+
+printf("Enter two numbers");
+scanf("%d%d",p,q);
+
+
+ans = *p + *q ;
+
+printf("\nans = %d",ans);
+
+
+
+------------------------------------------------------
+
+name maths sci eng perc grade
+
+struct  student {
+    char name[30];
+    int maths;
+    int sci;
+    int eng;
+    float perc;
+    char grade; 
+};
+
+
+struct student s,t; 
+
+scanf("%s%d%d%d",s.name,&s.maths,&s.sci,&s.eng);
+
+35+ => P 
+35- => F 
+
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
