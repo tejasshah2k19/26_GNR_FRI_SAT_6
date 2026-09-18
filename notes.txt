@@ -323,25 +323,112 @@ scanf("%s%d%d%d",s.name,&s.maths,&s.sci,&s.eng);
 
 ----------------------------------------------------------
 
+DMA -> dynamic memory allocation 
+
+
+void add(){
+
+    int a;//4 byte  
+
+}
+
+
+int main(){ 
+
+    int a; //4 byte 
+    add();
+    //release 
+    int arr[5]; //4 byte * 5 ==>  10 20  X X X   => 10 20 30 40 50 | Full  
+    //4 byte * 5 => 20 byte 
+    //[] [] [] [] [] [] [] [] [] 
+
+}
+
+
+
+a => 4 byte 
+arr => 20 byte 
+
+
+DMA --> 
+
+1) calloc() => allocate memory  => 4byte 5 block  --- continue  
+2) malloc() => allocate memory  => 20byte         --- 
+
+3) free() => release memory 
+
+4) realloc() 
+
+stdlib.h 
 
 
 
 
 
 
+----------------------------------------------
+linked list --> collection of nodes , dynamic list  
+
+list -> collection of items  -> dynamic list 
+array -> collection of items -> FIX 
+
+
+int arr[5]; //size : 5 : byte ? 20 byte {10 20 X X X } => 12 byte , {10 20 30 40 50} loss   
+
+
+dynamic list 
+[10] [40]
+
+allocate 
+release 
+
+
+node ->  are two 
+        1) data 
+        2) *next
+
+1) single linked list 
+2) double linked list 
+3) circular linked list 
+    single 
+    double 
 
 
 
+--------------------------------------------------------------------------------
+
+Data structure --> 
+
+            Linear DS               NoN Linear DS 
+            Array*                      Tree  
+            Stack*                      Graph 
+            Queue* 
+            LinkedList* 
 
 
 
+LinkedList --> list --> collection of items 
+           --> dynamic 
+           --> zero 
+           --> store -> ask memory -> allocate memory 
+           --> self ref 
+           [10] [20] [30]  [40]  
+           [10] [40]  
+            memory block -> DMA 
+                node 
+            data | *next 
 
 
+array --> collection of items 
+fix size 
+5 10 15 
+continue 
 
-
-
-
-
+int arr[10]; 3 elements -> 7 
+int arr[10]; 10 elements + 3 elements -> 
+        0th index => 2000,2001,2002,2003 
+        1st index => 2004 
+        2nd index => 2008
 
 
 
