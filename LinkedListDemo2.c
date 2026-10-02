@@ -70,6 +70,73 @@ void search(int searchItem){
 }
 
 
+//
+void removeBEG(){
+
+    struct node *p;     
+    p = head; 
+    head = head->next; 
+    free(p); 
+
+}
+
+void removeLast(){
+    struct node *p = head; 
+
+    while(p->next != last){
+        p=p->next; 
+    }
+
+    last = p; 
+    p = p->next; 
+
+    last->next  = NULL; 
+    free(p);
+ 
+}
+
+//removeByLocation(3)
+void removeByLoction(int location)
+{
+
+
+}
+
+//removeByValue(30)
+void removeByValue(int value){
+    struct node *p = head; 
+    struct node *q = head;
+    struct node *r; 
+
+
+    while(p!= NULL){
+
+        if(p->data == value){
+            break; 
+        }
+        p=p->next;
+    }
+    if(p!=NULL){
+
+        r = p->next; 
+
+        while(q->next != p){
+            q = q->next; 
+        }
+
+        q->next = r; 
+        free(p); 
+
+
+    }else{
+        printf("\nInvalid Source : %d",value);
+    }
+
+
+
+}
+
+
 int main()
 {
 
@@ -92,6 +159,12 @@ int main()
  
     search(2500); // not found 
     search(30);// found 
+
+    ///1000 10 20 30 40 50 
+    display();//1000 10 20 30 40 50 
+    printf("\n Removing First Node => ");
+    removeBEG();
+    display();//10 20 30 40 50 
 
     return 0;
 }
