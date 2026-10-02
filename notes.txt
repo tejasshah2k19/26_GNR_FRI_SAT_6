@@ -430,6 +430,54 @@ int arr[10]; 10 elements + 3 elements ->
         1st index => 2004 
         2nd index => 2008
 
+---------------------------------------------
+Linked List -> dynamic list --> allocate - release 
+linked list 
+memory allocate -> store 
+
+
+1000 -> 1004 -> 1008 
+
+[ 10| &20 ]  -->   [ 20 | &30 ]  -->  [ 30 | X  ]  --> X 
+
+struct node {
+    int data;
+    struct node  *next; 
+};
+
+
+
+[ 10| &20 ]  -->   [ 20 | &30 ]  -->  [ 30 | X  ]  --> X 
+ head                                   tail 
+
+
+ --------------------------------------------------------------------------
+
+
+ 10 20 30 40 
+
+
+
+[ 10 ]->  [ 20 ]->   [ 30 ]->   [ 40 ]->X 
+head 
+
+node --> 
+
+[ data | *next ]
+
+
+struct node{
+    int data; 
+    struct node *next; 
+};  
+
+struct student{
+    char name[20];
+    int age; 
+    struct node *next; 
+};  
+
+
 
 
 
