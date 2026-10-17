@@ -477,6 +477,89 @@ struct student{
     struct node *next; 
 };  
 
+----------------------------------------------
+
+Linked --> linear ds --->
+
+random --> add -> last 
+               -> beg 
+               -> any 
+
+           remove -> beg , last , any{index,position,value}
+
+
+----------------------------------------------
+
+  [] [] []  [] [] [] [] [] []   
+  n 
+
+  3rd  
+
+  DS --> lib --> 
+
+  Java -->  collection framework 
+
+
+LinkedList 
+
+
+7 linked list ---> add 
+n ->  2 
+
+10 20 30 40 50 60 70
+
+n =  2 
+
+10 20 30 40 50 70
+
+
+----------------------------------------------
+1) linear  { array stack queue linked list }
+2) non linear { tree graph } 
+
+
+sorting { bubble sort , selection sort , insertion sort , merge sort , quick sort , heap sort }
+searching { linear search , binary search }
+
+76 85 94 30 98 75 67  
+
+sort --> Asc Dsc 
+
+ASC : small --> large 
+DSC : large ---> small 
+
+sort --> 30 67 75 76 65 94 98 
+
+
+
+bubble sort :- 
+
+76 85 94 30 98 75 67  
+
+Pass 1:
+    76 85 74 30 98 75 67 
+    76 74 85 30 98 75 67 
+    76 74 30 85 98 75 67 
+    76 74 30 85 98 75 67 
+    76 74 30 85 75 98 67  
+    76 74 30 85 75 67 98
+
+
+Pass 2:
+    74 76 30 85 75 67 98
+    74 76 30 85 75 67 98
+    74 30 76 85 75 67 98
+    74 30 76 85 75 67 98
+    74 30 76 75 85 67 98
+    74 30 76 75 67 85 98
+
+--------------------------------------------------------
+
+selection sort 
+
+
+
+
 
 
 

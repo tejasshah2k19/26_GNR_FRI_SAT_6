@@ -39,132 +39,164 @@ void display()
     printf("\nList of Items : => ");
     while (p != NULL)
     {
-        printf(" %d ", p->data); // 1000 10 20 30 40 50 
-        p = p->next;//10 20 NULL
+        printf(" %d ", p->data); // 1000 10 20 30 40 50
+        p = p->next;             // 10 20 NULL
     }
 }
 
-void addNodeBEG(int num){
-
-    struct node *newNode = (struct node*) malloc(sizeof(struct node));
-    newNode->data = num; 
-    newNode->next = head; 
-    head = newNode; 
-}
-
-
-void countNode(){
-    int totalNode =0;
-    struct node *p = head; 
-
-    while(p != NULL){
-        totalNode++;
-        p=p->next; 
-    }
-        
-    printf("\nTotal Node = %d",totalNode);//6 
-}
-
-void search(int searchItem){
-    
-}
-
-
-//
-void removeBEG(){
-
-    struct node *p;     
-    p = head; 
-    head = head->next; 
-    free(p); 
-
-}
-
-void removeLast(){
-    struct node *p = head; 
-
-    while(p->next != last){
-        p=p->next; 
-    }
-
-    last = p; 
-    p = p->next; 
-
-    last->next  = NULL; 
-    free(p);
- 
-}
-
-//removeByLocation(3)
-void removeByLoction(int location)
+void addNodeBEG(int num)
 {
 
-
+    struct node *newNode = (struct node *)malloc(sizeof(struct node));
+    newNode->data = num;
+    newNode->next = head;
+    head = newNode;
 }
 
-//removeByValue(30)
-void removeByValue(int value){
-    struct node *p = head; 
+void countNode()
+{
+    int totalNode = 0;
+    struct node *p = head;
+
+    while (p != NULL)
+    {
+        totalNode++;
+        p = p->next;
+    }
+
+    printf("\nTotal Node = %d", totalNode); // 6
+}
+
+void search(int searchItem)
+{
+}
+
+//
+void removeBEG()
+{
+
+    struct node *p;
+    p = head;
+    head = head->next;
+    free(p);
+}
+
+void removeLast()
+{
+    struct node *p = head;
+
+    while (p->next != last)
+    {
+        p = p->next;
+    }
+
+    last = p;
+    p = p->next;
+
+    last->next = NULL;
+    free(p);
+}
+
+// removeByLocation(3)
+void removeByLoction(int location)
+{
+}
+
+// removeByValue(30)
+void removeByValue(int value)
+{
+    struct node *p = head;
     struct node *q = head;
-    struct node *r; 
+    struct node *r;
 
+    while (p != NULL)
+    {
 
-    while(p!= NULL){
-
-        if(p->data == value){
-            break; 
+        if (p->data == value)
+        {
+            break;
         }
-        p=p->next;
+        p = p->next;
     }
-    if(p!=NULL){
+    if (p != NULL)
+    {
 
-        r = p->next; 
+        r = p->next;
 
-        while(q->next != p){
-            q = q->next; 
+        while (q->next != p)
+        {
+            q = q->next;
         }
 
-        q->next = r; 
-        free(p); 
-
-
-    }else{
-        printf("\nInvalid Source : %d",value);
+        q->next = r;
+        free(p);
     }
-
-
-
+    else
+    {
+        printf("\nInvalid Source : %d", value);
+    }
 }
 
+void addNodeAny(int source, int newValue)
+{ // 30 , 100  : 300 , 500
+
+    struct node *p = head;
+    struct node *newNode;
+    while (p != NULL)
+    {
+
+        if (p->data == source)
+        {
+            break;
+        }
+
+        p = p->next; // 10 20 NULL
+    }
+
+    if (p == NULL)
+    {
+        printf("\nInvalid Source");
+    }
+    else
+    {
+        // insert new value -> ll
+        newNode = (struct node*)malloc(sizeof(struct node));
+        newNode->data = newValue;
+        newNode->next = p->next; 
+        p->next = newNode; 
+        printf("\n%d inserted....",newValue); 
+    }
+}
 
 int main()
 {
 
-    //insert node at the end 
+    // insert node at the end
     addNode(10);
     addNode(20);
     addNode(30);
     addNode(40);
     addNode(50);
-     
-    //display - list all 
-    display();//10 20 30 40 50 
 
-    
+    // display - list all
+    display(); // 10 20 30 40 50
+
     addNodeBEG(1000);
 
-    display();//1000 10 20 30 40 50 
-    
-    countNode(); // 6 
- 
-    search(2500); // not found 
-    search(30);// found 
+    display(); // 1000 10 20 30 40 50
 
-    ///1000 10 20 30 40 50 
-    display();//1000 10 20 30 40 50 
+    countNode(); // 6
+
+    search(2500); // not found
+    search(30);   // found
+
+    /// 1000 10 20 30 40 50
+    display(); // 1000 10 20 30 40 50
     printf("\n Removing First Node => ");
     removeBEG();
-    display();//10 20 30 40 50 
+    display(); // 10 20 30 40 50
 
+    addNodeAny(30, 100);
+    display();
     return 0;
 }
